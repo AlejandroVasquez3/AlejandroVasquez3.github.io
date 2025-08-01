@@ -757,15 +757,10 @@
 
         // Resume download function
         function downloadResume() {
-            // This function would typically trigger a download of your resume PDF
-            // For now, it shows an alert - you'll need to replace this with your actual resume file
-            alert('Resume download would start here. Please upload your resume PDF file and update this function with the correct file path.');
-            
-            // Example of how to implement actual download:
-            // const link = document.createElement('a');
-            // link.href = 'path/to/your/resume.pdf';
-            // link.download = 'Alejandro_Vasquez_Resume.pdf';
-            // link.click();
+            const link = document.createElement('a');
+            link.href = 'resume.pdf';  // Replace with your actual filename
+            link.download = 'Alejandro_Vasquez_Resume.pdf';
+            link.click();
         }
 
         // Add animation on scroll
